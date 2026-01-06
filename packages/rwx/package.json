@@ -1,0 +1,46 @@
+{
+  "name": "@std-in/rwx",
+  "version": "2.5.1",
+  "type": "module",
+  "bin": {
+    "rwx": "bin/run.js"
+  },
+  "scripts": {
+    "build": "tsc -p tsconfig.build.json",
+    "cli:install": "pnpm build && pnpm link --global",
+    "lint": "pnpm exec eslint .",
+    "prepublishOnly": "pnpm build",
+    "test": "vitest run"
+  },
+  "files": [
+    "dist",
+    "bin",
+    "README.md",
+    "LICENSE"
+  ],
+  "publishConfig": {
+    "access": "public"
+  },
+  "oclif": {
+    "bin": "rwx",
+    "commands": "./dist/commands",
+    "plugins": [
+      "@oclif/plugin-autocomplete"
+    ],
+    "hooks": {
+      "command_not_found": "./dist/hooks/command_not_found.js"
+    }
+  },
+  "dependencies": {
+    "@anthropic-ai/claude-agent-sdk": "catalog:",
+    "@oclif/core": "catalog:",
+    "@oclif/plugin-autocomplete": "catalog:",
+    "@openai/codex-sdk": "catalog:",
+    "zod": "catalog:"
+  },
+  "devDependencies": {
+    "@types/node": "catalog:",
+    "typescript": "catalog:",
+    "vitest": "catalog:"
+  }
+}

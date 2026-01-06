@@ -1,0 +1,16 @@
+{
+  "name": "rwx-workspace",
+  "private": true,
+  "version": "2.5.1",
+  "packageManager": "pnpm@10.27.0",
+  "devDependencies": {
+    "@eslint/js": "catalog:",
+    "eslint": "catalog:",
+    "typescript-eslint": "catalog:"
+  },
+  "scripts": {
+    "build": "pnpm -r build",
+    "test": "pnpm -r test",
+    "release": "./scripts/release.sh"
+  }
+}

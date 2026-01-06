@@ -1,0 +1,23 @@
+packages:
+  - packages/*
+
+catalog:
+  '@anthropic-ai/claude-agent-sdk': 0.1.76
+  '@eslint/js': ^9.32.0
+  '@oclif/core': ^4.5.1
+  '@oclif/plugin-autocomplete': ^3.2.34
+  '@openai/codex-sdk': 0.77.0
+  '@types/node': ^24.2.0
+  eslint: ^9.32.0
+  typescript: ^5.9.2
+  typescript-eslint: ^8.49.0
+  vitest: 4.0.16
+  zod: 4.1.12
+
+onlyBuiltDependencies:
+  - esbuild
+
+overrides:
+  '@std-in/apg': link:../apg/packages/agp
+  agp-workspace: link:../apg
+  apg: link:../apg
