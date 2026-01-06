@@ -2,9 +2,9 @@
 
 <div align="center">
 
-[![GitHub stars](https://img.shields.io/github/stars/r2d4/rwx?style=social)](https://github.com/mattrickard/rwx/stargazers)
+[![GitHub stars](https://img.shields.io/github/stars/r2d4/rwx?style=social)](https://github.com/r2d4/rwx/stargazers)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
-[![Twitter Follow](https://img.shields.io/twitter/follow/mattrickard?style=social)](https://x.com/mattrickard)
+[![Twitter Follow](https://img.shields.io/twitter/follow/mattrickard?style=social)](https://x.com/r2d4)
 
 </div>
 
@@ -231,4 +231,4 @@ rwx [agent] "<task>" [options]
 
 ## License
 
-MIT © [Matt Rickard](https://github.com/mattrickard)
+MIT © [Matt Rickard](https://mattrickard.com)
